@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-align: center;
+    align-items: center;
+    background-color: #2d3038;
+    font-family: "Poppins", sans-serif;
+}
+
+.ns {
+    -moz-user-select: none !important;
+    -khtml-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.ns::selection,
+.ns *::selection {
+    background-color: inherit;
+    color: inherit;
+    text-shadow: inherit;
+}
+
+h1 {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    max-width: 80vw;
+    font-size: 8vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #444;
+    padding: 0.2em 0.5em;
+    font-weight: 900;
+    margin: 0;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1::before {
+    content: 'ctrl + u desativado';
+    background: rgb(31, 29, 29);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    color: rgb(105, 105, 105);
+    font-size: 0.25em;
+    padding: 0 1em;
+}
+
+h1::after {
+    content: 'tente usá-lo como quiser.';
+    background: rgb(31, 29, 29);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    color: rgb(105, 105, 105);
+    font-size: 0.15em;
+    padding: 0 1em;
+}
